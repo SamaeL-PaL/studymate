@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FeatureCard from "@/components/FeatureCard";
 
 // Data 3 fitur utama StudyMate.
@@ -54,12 +55,13 @@ export default function Home() {
           </a>
         </nav>
 
-        <a
-          href="#fitur"
+        {/* Tautan ke halaman chat. */}
+        <Link
+          href="/chat"
           className="rounded-full border border-ink/20 px-4 py-2 text-sm font-medium transition-colors hover:border-clay hover:text-clay"
         >
           Coba gratis
-        </a>
+        </Link>
       </header>
 
       {/* ===== Hero: judul besar + satu kalimat penjelasan ===== */}
@@ -77,12 +79,12 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{PENJELASAN}</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <a
-              href="#fitur"
+            <Link
+              href="/chat"
               className="rounded-full bg-clay px-6 py-3.5 text-sm font-semibold text-cream shadow-[4px_4px_0_0_var(--clay-dark)] transition-transform hover:-translate-y-0.5"
             >
               Mulai belajar
-            </a>
+            </Link>
             <a
               href="#fitur"
               className="rounded-full border border-ink/20 px-6 py-3.5 text-sm font-semibold transition-colors hover:border-ink/50"
