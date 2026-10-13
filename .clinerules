@@ -1,0 +1,9 @@
+Project: StudyMate, web AI study assistant untuk mahasiswa.
+Stack: Next.js (App Router), TypeScript, Tailwind CSS.
+Aturan:
+- Pengguna adalah pemula. Sebelum menjalankan perintah terminal, jelaskan singkat dalam bahasa Indonesia apa fungsinya.
+- Jangan pernah commit secret atau API key. Pakai .env.local dan pastikan masuk .gitignore.
+- Jangan baca isi file .env.local.
+- Kode sederhana, rapi, dan diberi komentar singkat bahasa Indonesia.
+- Setelah selesai suatu tugas, jalankan `npm run build` dan laporkan hasilnya.
+- UI harus terasa custom, tidak generik: hindari gradient ungu dan kartu putih seragam. Pakai palet warna earthy dan tipografi yang menarik.

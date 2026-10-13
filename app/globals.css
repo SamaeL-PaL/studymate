@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Palet "earthy" StudyMate: tanah liat, daun zaitun, kertas tua.
+   Semua warna ditulis sekali di sini supaya mudah diubah. */
+:root {
+  --sand: #f7f1e6; /* latar utama (kertas hangat) */
+  --cream: #fdfaf3; /* latar kartu terang */
+  --clay: #b4553a; /* terracotta */
+  --clay-dark: #8e3f29;
+  --clay-soft: #efd8ce;
+  --olive: #5b6b4a; /* hijau daun */
+  --olive-dark: #46543a;
+  --olive-soft: #e3e7d9;
+  --mustard: #d9a441; /* aksen kuning tanah */
+  --ink: #2b2723; /* teks utama (coklat gelap) */
+  --ink-soft: #6c6157; /* teks sekunder */
+}
+
+/* Daftarkan warna & font ke Tailwind v4 agar bisa dipakai
+   sebagai class biasa, misalnya: bg-clay, text-ink-soft, font-display. */
+@theme inline {
+  --color-sand: var(--sand);
+  --color-cream: var(--cream);
+  --color-clay: var(--clay);
+  --color-clay-dark: var(--clay-dark);
+  --color-clay-soft: var(--clay-soft);
+  --color-olive: var(--olive);
+  --color-olive-dark: var(--olive-dark);
+  --color-olive-soft: var(--olive-soft);
+  --color-mustard: var(--mustard);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
+}
+
+/* Latar halaman: kertas hangat dengan bercak warna tanah yang halus. */
+body {
+  background-color: var(--sand);
+  background-image:
+    radial-gradient(60rem 32rem at 10% -12%, rgba(180, 85, 58, 0.12), transparent 60%),
+    radial-gradient(48rem 28rem at 95% 2%, rgba(91, 107, 74, 0.14), transparent 62%);
+  color: var(--ink);
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+}
+
+/* Warna teks yang diblok: senada dengan tema. */
+::selection {
+  background: var(--mustard);
+  color: var(--ink);
+}
